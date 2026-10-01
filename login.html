@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sign in to Stackly Baby & Kids Store">
+<title>Stackly — Sign In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="icon" href="assets/images/stackly-logo-footer.webp">
+</head>
+<body class="auth-page login-page">
+<header class="auth-top">
+  <a class="auth-brand" href="index.html" aria-label="Go to Stackly home">
+    <span class="auth-logo-mask" aria-hidden="true"></span><span class="sr-only">STACKLY</span>
+  </a>
+  <a class="auth-back" href="index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to store</a>
+</header>
+
+<main class="auth-main">
+  <div class="auth-wrap">
+    <section class="auth-story">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h1>Come back to<br><em>the good stuff.</em></h1>
+      <p>Sign in to continue to your saved favourites, orders and little discoveries.</p>
+      <div class="story-points" aria-label="Account benefits">
+        <span><i class="fa-solid fa-heart" aria-hidden="true"></i> Saved favourites</span>
+        <span><i class="fa-solid fa-box" aria-hidden="true"></i> Order history</span>
+        <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> Faster checkout</span>
+      </div>
+      <span class="mini">STACKLY / BABY &amp; KIDS STORE</span>
+    </section>
+
+    <section class="auth-form" aria-labelledby="loginTitle">
+      <span class="kicker">ACCOUNT / SIGN IN</span>
+      <h2 id="loginTitle">Welcome back</h2>
+      <p class="lead">Choose your account type and enter your details to continue.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="role">Account type</label>
+          <div class="role-options" role="radiogroup" aria-label="Choose account type">
+            <label class="role-option">
+              <input type="radio" name="role" value="client" checked>
+              <span><i class="fa-solid fa-user" aria-hidden="true"></i><strong>Client</strong><small>Shop &amp; manage your account</small></span>
+            </label>
+            <label class="role-option">
+              <input type="radio" name="role" value="admin">
+              <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><strong>Admin</strong><small>Manage the store</small></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <div class="input-wrap">
+            <i class="fa-regular fa-envelope field-icon" aria-hidden="true"></i>
+            <input id="email" name="email" type="email" data-validate autocomplete="email" inputmode="email" placeholder="you@example.com">
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock field-icon" aria-hidden="true"></i>
+            <input id="password" name="password" type="password" data-validate autocomplete="current-password" placeholder="Enter your password">
+            <button class="password-toggle" type="button" aria-label="Show password" aria-controls="password" aria-pressed="false">
+              <i class="fa-regular fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <button class="auth-submit" type="submit">Sign in <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        <div class="auth-status" aria-live="polite"></div>
+      </form>
+
+      <p class="auth-switch">New here? <a href="signup.html">Create an account</a></p>
+      <div class="auth-home"><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to store</a></div>
+    </section>
+  </div>
+</main>
+<script src="js/auth.js"></script>
+</body>
+</html>

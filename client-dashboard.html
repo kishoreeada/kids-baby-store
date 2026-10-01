@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stackly — Client Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-role="client">
+<div class="dashboard-shell">
+  <aside class="dashboard-sidebar">
+    <div class="dashboard-brand">
+      <a href="index.html" aria-label="Stackly home"><span class="dashboard-logo"></span></a>
+      <button class="dashboard-mobile-close" type="button" data-menu-close aria-label="Close dashboard menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="dashboard-label">My Stackly</div>
+    <nav class="dashboard-nav" aria-label="Client dashboard navigation">
+      <a href="#overview" data-panel="overview" data-label="Overview"><i class="fa-solid fa-house"></i>Overview</a>
+      <a href="#orders" data-panel="orders" data-label="Orders"><i class="fa-solid fa-box"></i>Orders</a>
+      <a href="#favourites" data-panel="favourites" data-label="Favourites"><i class="fa-solid fa-heart"></i>Favourites</a>
+      <a href="#profile" data-panel="profile" data-label="Profile"><i class="fa-solid fa-user"></i>Profile</a>
+      <a href="#rewards" data-panel="rewards" data-label="Rewards"><i class="fa-solid fa-star"></i>Rewards</a>
+      <a href="#addresses" data-panel="addresses" data-label="Addresses"><i class="fa-solid fa-location-dot"></i>Addresses</a>
+    </nav>
+    <div class="dashboard-user">
+      <button class="logout-btn" data-logout><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+    </div>
+  </aside>
+  <div class="dashboard-overlay"></div>
+
+  <main class="dashboard-main">
+    <header class="dashboard-header">
+      <div class="dashboard-top-copy">
+        <button class="dashboard-mobile-menu" type="button" data-menu-toggle aria-label="Open dashboard menu"><i class="fa-solid fa-bars"></i></button>
+        <a class="dashboard-mobile-logo" href="index.html" aria-label="Stackly home"><span class="dashboard-logo"></span></a>
+        <div class="dashboard-header-title">
+          <span class="dashboard-kicker">STACKLY / CLIENT DASHBOARD</span>
+          <h1 class="dashboard-page-heading">Your <em data-current-section>Overview</em></h1>
+        </div>
+      </div>
+      <div class="dashboard-user-head">
+        <div class="dashboard-user-head-text">
+          <strong data-dashboard-email>guest@stackly.com</strong>
+          <span>Client account</span>
+        </div>
+        <div class="dashboard-avatar" data-user-initial aria-label="Account avatar">G</div>
+      </div>
+    </header>
+
+    <div class="dashboard-content">
+      <section class="dashboard-panel" id="overview">
+        <div class="panel-intro"><div><h2>Everything you need,<br><em>in one place.</em></h2></div><p>A simple client workspace for keeping orders, favourites and account details close.</p></div>
+        <div class="dashboard-stats">
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-box"></i></div><small>Orders</small><strong>08</strong><span>2 currently on the way</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-heart"></i></div><small>Favourites</small><strong>14</strong><span>3 recently added</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-gift"></i></div><small>Gift ideas</small><strong>06</strong><span>Ready for later</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-star"></i></div><small>Rewards</small><strong>240</strong><span>Points available</span></article>
+        </div>
+        <div class="dashboard-content-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-truck-fast"></i></div><h3>Your latest delivery</h3><p>Order #SK-1048 is moving through fulfilment.</p><ul class="dashboard-list"><li><span>Status</span><span>Packed</span></li><li><span>Expected</span><span>02 Oct</span></li><li><span>Items</span><span>3</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-heart"></i></div><h3>Saved for later</h3><p>You have a few little finds waiting whenever you are ready.</p><ul class="dashboard-list"><li><span>New favourites</span><span>3</span></li><li><span>Gift ideas</span><span>6</span></li><li><span>Collections</span><span>2</span></li></ul></article>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dashboard-timeline-card">
+            <div class="dashboard-info-icon"><i class="fa-solid fa-route"></i></div>
+            <h3>Delivery timeline</h3><p>A quick view of the latest order journey.</p>
+            <div class="mini-timeline"><div class="mini-timeline-step done"><span></span><div><strong>Order placed</strong><small>30 Sep · 10:24 AM</small></div></div><div class="mini-timeline-step done"><span></span><div><strong>Packed</strong><small>30 Sep · 04:10 PM</small></div></div><div class="mini-timeline-step current"><span></span><div><strong>In transit</strong><small>Expected next</small></div></div><div class="mini-timeline-step"><span></span><div><strong>Delivered</strong><small>02 Oct</small></div></div></div>
+          </article>
+          <article class="dashboard-info-card dashboard-reward-card">
+            <div class="dashboard-info-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Rewards progress</h3><p>Keep collecting points through your next purchases.</p>
+            <div class="reward-meter"><div><span>240 / 300 points</span><strong>80%</strong></div><span class="reward-track"><i style="width:80%"></i></span></div>
+            <a class="dashboard-action" data-cta-404 href="404.html">Explore rewards <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+        <div class="dashboard-wide-note"><div class="dashboard-wide-note-icon"><i class="fa-solid fa-bell"></i></div><div><span class="profile-eyebrow">Recent activity</span><h3>Your workspace is up to date.</h3><p>Your latest order was packed today. Three favourites and six gift ideas are currently saved.</p></div><a class="dashboard-action" data-cta-404 href="404.html">View activity <i class="fa-solid fa-arrow-right"></i></a></div>
+      </section>
+
+      <section class="dashboard-panel" id="orders">
+        <div class="panel-intro"><div><h2>Your<br><em>orders.</em></h2></div><p>Keep track of recent purchases, fulfilment and delivery updates.</p></div>
+        <div class="dashboard-table-card">
+          <div class="dashboard-table-head"><h3>Order history</h3><span>4 latest orders</span></div>
+          <table class="dashboard-table"><thead><tr><th>Order</th><th>Items</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#SK-1048</td><td>3 items</td><td>₹2,480</td><td>30 Sep</td><td><span class="status green">Packed</span></td></tr>
+            <tr><td>#SK-1039</td><td>2 items</td><td>₹1,260</td><td>22 Sep</td><td><span class="status green">Delivered</span></td></tr>
+            <tr><td>#SK-1028</td><td>1 item</td><td>₹840</td><td>14 Sep</td><td><span class="status green">Delivered</span></td></tr>
+            <tr><td>#SK-1014</td><td>4 items</td><td>₹3,180</td><td>03 Sep</td><td><span class="status pink">Returned</span></td></tr>
+          </tbody></table>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-truck"></i></div><h3>Current delivery</h3><p>Your newest order is packed and preparing for transit.</p><ul class="dashboard-list"><li><span>Carrier</span><span>Stackly Express</span></li><li><span>ETA</span><span>02 Oct</span></li><li><span>Tracking</span><span>SKX-88421</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Track order <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-receipt"></i></div><h3>Order summary</h3><p>Your recent purchasing activity at a glance.</p><ul class="dashboard-list"><li><span>This month</span><span>₹4,580</span></li><li><span>Average order</span><span>₹1,145</span></li><li><span>Delivered</span><span>2</span></li></ul></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="favourites">
+        <div class="panel-intro"><div><h2>Little things<br><em>you love.</em></h2></div><p>Your saved favourites and gift ideas, kept together for the next visit.</p></div>
+        <div class="dashboard-content-grid">
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-heart"></i></div><h3>Saved favourites</h3><p>Your most-loved products are waiting here.</p><ul class="dashboard-list"><li><span>Everyday essentials</span><span>7</span></li><li><span>Play &amp; learn</span><span>4</span></li><li><span>Gift ideas</span><span>3</span></li></ul><a class="dashboard-action" href="404.html">Continue shopping <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-gift"></i></div><h3>Gift list</h3><p>Six saved ideas are ready for birthdays, celebrations and little surprises.</p><ul class="dashboard-list"><li><span>Saved ideas</span><span>6</span></li><li><span>Price range</span><span>₹500–₹3K</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Saved collections</h3><p>Your saved mix is spread across everyday essentials and play &amp; learn.</p><ul class="dashboard-list"><li><span>Essentials</span><span>7</span></li><li><span>Play &amp; learn</span><span>4</span></li><li><span>Gift picks</span><span>3</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Open collection <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="profile">
+        <div class="panel-intro profile-intro"><div><h2>Your<br><em>profile.</em></h2></div><p>Your account details at a glance. This static theme does not store or persist personal data.</p></div>
+
+        <div class="profile-layout">
+          <article class="profile-identity-card">
+            <div class="profile-identity-top">
+              <div class="profile-large-avatar" data-user-initial>G</div>
+              <div>
+                <span class="profile-eyebrow">Client account</span>
+                <h3>Welcome back.</h3>
+                <p>Your Stackly shopping workspace is ready.</p>
+              </div>
+            </div>
+            <div class="profile-email-block">
+              <span>Email address</span>
+              <strong data-dashboard-email>guest@stackly.com</strong>
+            </div>
+            <div class="profile-note"><i class="fa-solid fa-shield-heart"></i><span>No account data is stored by this front-end theme. The email is shown only from the current page URL.</span></div>
+          </article>
+
+          <article class="profile-card profile-details-card">
+            <div class="profile-card-heading"><div><span class="profile-eyebrow">Account</span><h3>Account details</h3></div><i class="fa-regular fa-id-card"></i></div>
+            <div class="profile-row"><span>Email</span><strong data-dashboard-email>guest@stackly.com</strong></div>
+            <div class="profile-row"><span>Account type</span><strong>Client</strong></div>
+            <div class="profile-row"><span>Member since</span><strong>Today</strong></div>
+            <div class="profile-row"><span>Workspace</span><strong>Baby &amp; Kids Store</strong></div>
+          </article>
+
+          <article class="profile-card profile-preferences-card">
+            <div class="profile-card-heading"><div><span class="profile-eyebrow">Shopping</span><h3>Your preferences</h3></div><i class="fa-regular fa-heart"></i></div>
+            <div class="preference-metrics">
+              <div><strong>14</strong><span>Favourites</span></div>
+              <div><strong>06</strong><span>Gift ideas</span></div>
+              <div><strong>240</strong><span>Reward points</span></div>
+            </div>
+            <div class="preference-foot"><span>Most saved</span><strong>Play &amp; learn</strong></div>
+          </article>
+
+          <article class="profile-card profile-support-card">
+            <div class="profile-support-icon"><i class="fa-solid fa-headset"></i></div>
+            <div><span class="profile-eyebrow">Need help?</span><h3>We’re here for the little things.</h3><p>For this demo, support actions are visual only and do not submit or store personal information.</p></div>
+            <a class="dashboard-action" href="404.html">Contact Stackly <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="rewards">
+        <div class="panel-intro"><div><h2>Little wins,<br><em>worth keeping.</em></h2></div><p>A simple rewards snapshot showing how your points are building toward the next milestone.</p></div>
+        <div class="dashboard-stats">
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-star"></i></div><small>Available</small><strong>240</strong><span>Points ready to use</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-trophy"></i></div><small>Next tier</small><strong>300</strong><span>60 points to go</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-gift"></i></div><small>Gift value</small><strong>₹120</strong><span>Current reward value</span></article>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-bolt"></i></div><h3>How your points grow</h3><ul class="dashboard-list"><li><span>Shopping</span><span>1 pt / ₹10</span></li><li><span>Gift purchases</span><span>2× bonus</span></li><li><span>Seasonal events</span><span>Bonus points</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-arrow-trend-up"></i></div><h3>Next milestone</h3><p>You are 80% of the way to the next reward tier.</p><div class="reward-meter large"><div><span>240 / 300 points</span><strong>80%</strong></div><span class="reward-track"><i style="width:80%"></i></span></div><a class="dashboard-action" data-cta-404 href="404.html">See reward details <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="addresses">
+        <div class="panel-intro"><div><h2>Ready for<br><em>delivery.</em></h2></div><p>Saved delivery details are represented visually in this static front-end theme and are not persisted.</p></div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-house"></i></div><h3>Home</h3><p>Primary delivery location for everyday orders.</p><ul class="dashboard-list"><li><span>Label</span><span>Home</span></li><li><span>City</span><span>Hyderabad</span></li><li><span>Default</span><span>Yes</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Manage address <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-location-dot"></i></div><h3>Gift delivery</h3><p>A second delivery profile can be used for special occasions in a connected product.</p><ul class="dashboard-list"><li><span>Label</span><span>Gift</span></li><li><span>Status</span><span>Not configured</span></li><li><span>Storage</span><span>Demo only</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Add address <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </section>
+    </div>
+    <footer class="dashboard-footer"><span>STACKLY / BABY &amp; KIDS STORE</span><span>CLIENT WORKSPACE</span></footer>
+  </main>
+</div>
+<script src="js/dashboard.js"></script>
+</body></html>

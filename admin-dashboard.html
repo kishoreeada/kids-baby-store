@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stackly — Admin Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-role="admin">
+<div class="dashboard-shell">
+  <aside class="dashboard-sidebar">
+    <div class="dashboard-brand">
+      <a href="index.html" aria-label="Stackly home"><span class="dashboard-logo"></span></a>
+      <button class="dashboard-mobile-close" type="button" data-menu-close aria-label="Close dashboard menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="dashboard-label">Store management</div>
+    <nav class="dashboard-nav" aria-label="Admin dashboard navigation">
+      <a href="#overview" data-panel="overview" data-label="Overview"><i class="fa-solid fa-house"></i>Overview</a>
+      <a href="#orders" data-panel="orders" data-label="Orders"><i class="fa-solid fa-box"></i>Orders</a>
+      <a href="#customers" data-panel="customers" data-label="Customers"><i class="fa-solid fa-users"></i>Customers</a>
+      <a href="#settings" data-panel="settings" data-label="Settings"><i class="fa-solid fa-sliders"></i>Settings</a>
+      <a href="#inventory" data-panel="inventory" data-label="Inventory"><i class="fa-solid fa-boxes-stacked"></i>Inventory</a>
+      <a href="#analytics" data-panel="analytics" data-label="Analytics"><i class="fa-solid fa-chart-line"></i>Analytics</a>
+    </nav>
+    <div class="dashboard-user">
+      <button class="logout-btn" data-logout><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+    </div>
+  </aside>
+  <div class="dashboard-overlay"></div>
+
+  <main class="dashboard-main">
+    <header class="dashboard-header">
+      <div class="dashboard-top-copy">
+        <button class="dashboard-mobile-menu" type="button" data-menu-toggle aria-label="Open dashboard menu"><i class="fa-solid fa-bars"></i></button>
+        <a class="dashboard-mobile-logo" href="index.html" aria-label="Stackly home"><span class="dashboard-logo"></span></a>
+        <div class="dashboard-header-title">
+          <span class="dashboard-kicker">STACKLY / ADMIN DASHBOARD</span>
+          <h1 class="dashboard-page-heading">Store <em data-current-section>Overview</em></h1>
+        </div>
+      </div>
+      <div class="dashboard-user-head">
+        <div class="dashboard-user-head-text">
+          <strong data-dashboard-email>guest@stackly.com</strong>
+          <span>Administrator</span>
+        </div>
+        <div class="dashboard-avatar" data-user-initial aria-label="Account avatar">G</div>
+      </div>
+    </header>
+
+    <div class="dashboard-content">
+      <section class="dashboard-panel" id="overview">
+        <div class="panel-intro">
+          <div><h2>Store control,<br><em>made clearer.</em></h2></div>
+          <p>A focused overview of the store workspace. These panels are ready for your real backend data when connected.</p>
+        </div>
+        <div class="dashboard-stats">
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div><small>Revenue</small><strong>₹84.2K</strong><span>+12.8% this month</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-cart-shopping"></i></div><small>Orders</small><strong>248</strong><span>18 awaiting fulfilment</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-users"></i></div><small>Customers</small><strong>1,284</strong><span>46 new this week</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-boxes-stacked"></i></div><small>Products</small><strong>326</strong><span>12 low-stock items</span></article>
+        </div>
+        <div class="dashboard-content-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Today's focus</h3><p>Keep fulfilment moving and review the products that are approaching low stock.</p><ul class="dashboard-list"><li><span>Orders to pack</span><span>18</span></li><li><span>Low-stock alerts</span><span>12</span></li><li><span>Customer messages</span><span>7</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-chart-simple"></i></div><h3>Store pulse</h3><p>Quick operational signals for the current workspace.</p><ul class="dashboard-list"><li><span>Conversion</span><span>4.8%</span></li><li><span>Average order</span><span>₹1,942</span></li><li><span>Returns</span><span>1.6%</span></li></ul></article>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dashboard-timeline-card"><div class="dashboard-info-icon"><i class="fa-solid fa-truck-fast"></i></div><h3>Fulfilment board</h3><p>Current order flow across the store operations queue.</p><div class="ops-bars"><div><span>Processing</span><strong>24</strong><i style="width:58%"></i></div><div><span>Packed</span><strong>18</strong><i style="width:44%"></i></div><div><span>Shipped</span><strong>31</strong><i style="width:72%"></i></div></div><a class="dashboard-action" data-cta-404 href="404.html">Open fulfilment <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><h3>Inventory watch</h3><p>Three operational signals need attention in the current workspace.</p><ul class="dashboard-list"><li><span>Low stock</span><span>12</span></li><li><span>Out of stock</span><span>3</span></li><li><span>Backorder</span><span>5</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Review inventory <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+        <div class="dashboard-wide-note"><div class="dashboard-wide-note-icon"><i class="fa-solid fa-clock-rotate-left"></i></div><div><span class="profile-eyebrow">Recent activity</span><h3>Store operations are moving normally.</h3><p>18 orders are awaiting fulfilment while customer messages and stock alerts remain visible for the team.</p></div><a class="dashboard-action" data-cta-404 href="404.html">View activity <i class="fa-solid fa-arrow-right"></i></a></div>
+      </section>
+
+      <section class="dashboard-panel" id="orders">
+        <div class="panel-intro"><div><h2>Order<br><em>desk.</em></h2></div><p>Review recent orders, payment state and fulfilment status from one place.</p></div>
+        <div class="dashboard-table-card">
+          <div class="dashboard-table-head"><h3>Recent orders</h3><span>5 latest records</span></div>
+          <table class="dashboard-table"><thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#SK-1048</td><td>Ananya Rao</td><td>₹2,480</td><td>30 Sep</td><td><span class="status green">Packed</span></td></tr>
+            <tr><td>#SK-1047</td><td>Arjun Mehta</td><td>₹1,260</td><td>30 Sep</td><td><span class="status gold">Processing</span></td></tr>
+            <tr><td>#SK-1046</td><td>Diya Shah</td><td>₹3,840</td><td>29 Sep</td><td><span class="status green">Delivered</span></td></tr>
+            <tr><td>#SK-1045</td><td>Neha Kumar</td><td>₹980</td><td>29 Sep</td><td><span class="status pink">Review</span></td></tr>
+          </tbody></table>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-credit-card"></i></div><h3>Payment mix</h3><p>Snapshot of the latest order payment methods.</p><ul class="dashboard-list"><li><span>UPI</span><span>52%</span></li><li><span>Cards</span><span>31%</span></li><li><span>COD</span><span>17%</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-arrow-rotate-left"></i></div><h3>Returns desk</h3><p>Keep the latest return activity visible alongside order fulfilment.</p><ul class="dashboard-list"><li><span>Pending review</span><span>4</span></li><li><span>Approved</span><span>2</span></li><li><span>Resolved</span><span>11</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Review returns <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="customers">
+        <div class="panel-intro"><div><h2>People who<br><em>shop with us.</em></h2></div><p>Customer activity and account insights for the store team.</p></div>
+        <div class="dashboard-content-grid">
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-user-group"></i></div><h3>Customer growth</h3><p>New customer activity is strongest around seasonal collections and gifting.</p><ul class="dashboard-list"><li><span>New this week</span><span>46</span></li><li><span>Returning</span><span>68%</span></li><li><span>Active accounts</span><span>1,284</span></li></ul></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-message"></i></div><h3>Needs attention</h3><p>Keep responses timely so shoppers can move forward with confidence.</p><ul class="dashboard-list"><li><span>Open messages</span><span>7</span></li><li><span>Pending replies</span><span>3</span></li><li><span>Resolved today</span><span>14</span></li></ul></article>
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-heart"></i></div><h3>Favourites signal</h3><p>Most saved category this week: everyday essentials.</p><a class="dashboard-action" data-cta-404 href="404.html">View orders <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-cake-candles"></i></div><h3>Upcoming moments</h3><p>Customer gifting activity is strongest around birthdays and seasonal events.</p><ul class="dashboard-list"><li><span>Birthday lists</span><span>28</span></li><li><span>Gift carts</span><span>16</span></li><li><span>Seasonal saves</span><span>42</span></li></ul></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="settings">
+        <div class="panel-intro"><div><h2>Store<br><em>settings.</em></h2></div><p>Core workspace preferences and operational information.</p></div>
+        <div class="dashboard-profile">
+          <article class="profile-card"><h3>Store information</h3><div class="profile-row"><span>Store name</span><strong>Stackly Baby &amp; Kids</strong></div><div class="profile-row"><span>Support email</span><strong>hello@stackly.com</strong></div><div class="profile-row"><span>Currency</span><strong>INR (₹)</strong></div><div class="profile-row"><span>Timezone</span><strong>IST</strong></div></article>
+          <article class="profile-card"><h3>Workspace preferences</h3><div class="profile-row"><span>Order alerts</span><strong>Enabled</strong></div><div class="profile-row"><span>Low stock alerts</span><strong>Enabled</strong></div><div class="profile-row"><span>Customer messages</span><strong>Enabled</strong></div><div class="profile-row"><span>Theme</span><strong>Stackly Pink</strong></div></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="inventory">
+        <div class="panel-intro"><div><h2>Stock that<br><em>stays ready.</em></h2></div><p>Inventory visibility for the products that keep the store moving.</p></div>
+        <div class="dashboard-stats">
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-boxes-stacked"></i></div><small>Total SKUs</small><strong>326</strong><span>Across active collections</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><small>Low stock</small><strong>12</strong><span>Needs review</span></article>
+          <article class="dashboard-stat"><div class="dashboard-stat-icon"><i class="fa-solid fa-ban"></i></div><small>Out of stock</small><strong>03</strong><span>Unavailable now</span></article>
+        </div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dark"><div class="dashboard-info-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Category health</h3><ul class="dashboard-list"><li><span>Newborn</span><span>Healthy</span></li><li><span>Play &amp; learn</span><span>Watch</span></li><li><span>Essentials</span><span>Healthy</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Review categories <i class="fa-solid fa-arrow-right"></i></a></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-truck-ramp-box"></i></div><h3>Restock queue</h3><p>Products below the current safety threshold.</p><ul class="dashboard-list"><li><span>Soft play set</span><span>6 left</span></li><li><span>Muslin bundle</span><span>8 left</span></li><li><span>Bedtime lamp</span><span>9 left</span></li></ul></article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="analytics">
+        <div class="panel-intro"><div><h2>Signals behind<br><em>the store.</em></h2></div><p>A compact analytics view for revenue, conversion and customer behaviour.</p></div>
+        <div class="dashboard-content-grid dashboard-secondary-grid">
+          <article class="dashboard-info-card dashboard-chart-card"><div class="dashboard-info-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Revenue trend</h3><p>Monthly movement across the current store snapshot.</p><div class="fake-chart"><span style="height:35%"></span><span style="height:48%"></span><span style="height:43%"></span><span style="height:62%"></span><span style="height:58%"></span><span style="height:78%"></span><span style="height:88%"></span></div><div class="chart-labels"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Now</span></div></article>
+          <article class="dashboard-info-card"><div class="dashboard-info-icon"><i class="fa-solid fa-bullseye"></i></div><h3>Performance signals</h3><ul class="dashboard-list"><li><span>Conversion</span><span>4.8%</span></li><li><span>Average order</span><span>₹1,942</span></li><li><span>Repeat customers</span><span>68%</span></li><li><span>Returns</span><span>1.6%</span></li></ul><a class="dashboard-action" data-cta-404 href="404.html">Open report <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </section>
+    </div>
+    <footer class="dashboard-footer"><span>STACKLY / BABY &amp; KIDS STORE</span><span>ADMIN WORKSPACE</span></footer>
+  </main>
+</div>
+<script src="js/dashboard.js"></script>
+</body></html>

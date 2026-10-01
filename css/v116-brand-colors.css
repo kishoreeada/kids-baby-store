@@ -1,0 +1,69 @@
+
+/* =========================================================
+   V117 — STACKLY BRAND GRADIENT + PINK DECORATION
+   ========================================================= */
+:root{
+  --stackly-theme-pink:#c94f68;
+  --stackly-theme-pink-light:#e5a0aa;
+  --stackly-logo-gradient:linear-gradient(105deg,#f2c85b 0%,#c94f68 48%,#e5a0aa 100%);
+}
+
+/* The logo mask uses the exact gradient already used by Home. */
+.brand-logo-mask{
+  background:var(--stackly-logo-gradient) !important;
+}
+
+/* Home / About / Blog: replace the yellow theme decoration system with
+   the existing Stackly pink used throughout the design. */
+body.home-page,
+body.about-page,
+body.blog-page{
+  --lime:#c94f68;
+  --lime-2:#b9445d;
+}
+
+/* Header active underline and hover decoration are explicitly pink. */
+body.home-page .desktop-nav a:after,
+body.about-page .desktop-nav a:after,
+body.blog-page .desktop-nav a:after{
+  background:var(--stackly-theme-pink) !important;
+}
+
+body.home-page .desktop-nav a:hover,
+body.home-page .desktop-nav a.active,
+body.about-page .desktop-nav a:hover,
+body.about-page .desktop-nav a.active,
+body.blog-page .desktop-nav a:hover,
+body.blog-page .desktop-nav a.active{
+  color:var(--stackly-theme-pink) !important;
+}
+
+/* Common decorative lines, dots, borders and highlighted text that
+   previously consumed the yellow theme token now follow pink. */
+body.home-page .section-kicker,
+body.about-page .section-kicker,
+body.blog-page .section-kicker,
+body.home-page .eyebrow,
+body.about-page .eyebrow,
+body.blog-page .eyebrow{
+  color:var(--stackly-theme-pink);
+}
+
+body.home-page .text-decoration-yellow,
+body.about-page .text-decoration-yellow,
+body.blog-page .text-decoration-yellow{
+  text-decoration-color:var(--stackly-theme-pink) !important;
+}
+
+/* Keep the exact same brand gradient on SVG variants if present. */
+#stacklyHeaderLogoGradient stop:first-child{stop-color:#f2c85b}
+#stacklyHeaderLogoGradient stop:nth-child(2){stop-color:#c94f68}
+#stacklyHeaderLogoGradient stop:last-child{stop-color:#e5a0aa}
+
+@media(max-width:767px){
+  body.home-page .desktop-nav a:after,
+  body.about-page .desktop-nav a:after,
+  body.blog-page .desktop-nav a:after{
+    background:var(--stackly-theme-pink) !important;
+  }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Create a Stackly Baby & Kids Store account">
+<title>Stackly — Create Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="icon" href="assets/images/stackly-logo-footer.webp">
+</head>
+<body class="auth-page signup-page">
+<header class="auth-top">
+  <a class="auth-brand" href="index.html" aria-label="Go to Stackly home">
+    <span class="auth-logo-mask" aria-hidden="true"></span><span class="sr-only">STACKLY</span>
+  </a>
+  <a class="auth-back" href="index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to store</a>
+</header>
+
+<main class="auth-main">
+  <div class="auth-wrap">
+    <section class="auth-story">
+      <span class="eyebrow">JOIN THE LITTLE CLUB</span>
+      <h1>Keep little<br><em>moments</em> close.</h1>
+      <p>Create an account for faster checkout, saved favourites and a smoother way to shop.</p>
+      <div class="story-points" aria-label="Account benefits">
+        <span><i class="fa-solid fa-heart" aria-hidden="true"></i> Save favourites</span>
+        <span><i class="fa-solid fa-box-open" aria-hidden="true"></i> Track orders</span>
+        <span><i class="fa-solid fa-user-check" aria-hidden="true"></i> Easy checkout</span>
+      </div>
+      <span class="mini">STACKLY / BABY &amp; KIDS STORE</span>
+    </section>
+
+    <section class="auth-form" aria-labelledby="signupTitle">
+      <span class="kicker">ACCOUNT / SIGN UP</span>
+      <h2 id="signupTitle">Create your account</h2>
+      <p class="lead">One account. A simpler little shopping experience.</p>
+
+      <form id="signupForm" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <div class="input-wrap">
+            <i class="fa-regular fa-user field-icon" aria-hidden="true"></i>
+            <input id="name" name="name" type="text" data-validate autocomplete="name" placeholder="Your full name">
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <div class="input-wrap">
+            <i class="fa-regular fa-envelope field-icon" aria-hidden="true"></i>
+            <input id="email" name="email" type="email" data-validate autocomplete="email" inputmode="email" placeholder="you@example.com">
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock field-icon" aria-hidden="true"></i>
+            <input id="password" name="password" type="password" data-validate autocomplete="new-password" placeholder="Create a password">
+            <button class="password-toggle" type="button" aria-label="Show password" aria-controls="password" aria-pressed="false">
+              <i class="fa-regular fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="confirm">Confirm password</label>
+          <div class="input-wrap">
+            <i class="fa-solid fa-shield-halved field-icon" aria-hidden="true"></i>
+            <input id="confirm" name="confirm" type="password" data-validate autocomplete="new-password" placeholder="Repeat your password">
+            <button class="password-toggle" type="button" aria-label="Show password" aria-controls="confirm" aria-pressed="false">
+              <i class="fa-regular fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+          <span class="error" aria-live="polite"></span>
+        </div>
+
+        <button class="auth-submit" type="submit">Create account <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        <div class="auth-status" aria-live="polite"></div>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+      <div class="auth-home"><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to store</a></div>
+    </section>
+  </div>
+</main>
+<script src="js/auth.js"></script>
+</body>
+</html>

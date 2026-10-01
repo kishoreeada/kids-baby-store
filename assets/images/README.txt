@@ -1,0 +1,1 @@
+Local production assets. hero-kids.webp is the standalone optimized hero photograph. stackly-logo.svg is the local Stackly Baby & Kids Store logo. Use unique local WebP photographs for every additional image section; do not reuse images.

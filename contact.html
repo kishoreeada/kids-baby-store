@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Stackly Baby & Kids — thoughtful help for every little stage.">
+  <title>Contact Stackly — Baby & Kids Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="icon" href="assets/images/stackly-logo-footer.webp">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="css/v116-brand-colors.css">
+</head>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;overflow:hidden">
+  <defs>
+    <linearGradient id="stacklyHeaderLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2c85b"/>
+      <stop offset="48%" stop-color="#c94f68"/>
+      <stop offset="100%" stop-color="#e5a0aa"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<body class="contact-page">
+<header class="site-header" id="siteHeader">
+    <div class="header-shell">
+      <a class="brand" href="index.html" aria-label="Stackly Baby & Kids Store home"><span class="brand-logo-mask" aria-hidden="true"></span><span class="sr-only">STACKLY</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="icon-btn desktop-only" type="button" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><b>0</b></button>
+        <button class="icon-btn desktop-only" type="button" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><b>0</b></button>
+        <a class="signup-btn desktop-only" href="signup.html">Sign Up</a>
+        <a class="login-btn desktop-only" href="login.html">Login</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-top">
+        <a class="mobile-menu-brand" href="index.html" aria-label="Stackly Baby & Kids Store home"><span class="brand-logo-mask" aria-hidden="true"></span><span class="sr-only">STACKLY</span></a>
+        <button class="menu-close" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+      </nav>
+      <div class="mobile-account"><a href="signup.html">Sign Up</a><a href="login.html">Login</a></div>
+    </div>
+  </header>
+
+<main class="contact-main">
+  <!-- CONTACT 01: THE CONVERSATION -->
+  <section class="contact-conversation" id="contact-intro" aria-labelledby="contactTitle">
+    <div class="contact-shell">
+      <header class="contact-topline" data-contact-reveal>
+        <div class="contact-kicker">
+          <span>STACKLY / CONTACT</span><i></i><b>WE'RE HERE</b>
+        </div>
+        <span class="contact-index">01 / 06</span>
+      </header>
+
+      <div class="contact-hero">
+        <div class="contact-hero-copy" data-contact-copy>
+          <span class="contact-eyebrow">A LITTLE HELP GOES A LONG WAY.</span>
+          <h1 id="contactTitle">Let's make<br>it <em>easy.</em></h1>
+          <p class="contact-lead">Questions about an order, a gift, a size or simply what might work for their next little stage? Tell us what you need.</p>
+
+          <div class="contact-quick-links" aria-label="Quick contact details">
+            <a href="tel:+919876543210">
+              <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+              <div><small>CALL US</small><strong>+91 98765 43210</strong></div>
+            </a>
+            <a href="mailto:hello@stacklykids.com">
+              <span><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>
+              <div><small>EMAIL US</small><strong>hello@stacklykids.com</strong></div>
+            </a>
+          </div>
+
+          <div class="contact-note">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <span>Thoughtful answers for real family days.</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-contact-form>
+          <div class="contact-form-head">
+            <div>
+              <small>START HERE</small>
+              <h2>What can we help with?</h2>
+            </div>
+            <span class="contact-form-mark"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></span>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="contact-field contact-field-full">
+              <label for="contactName">Your name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" placeholder="How should we call you?" required>
+              <small class="contact-error" data-error-for="name"></small>
+            </div>
+
+            <div class="contact-field">
+              <label for="contactEmail">Email address</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <small class="contact-error" data-error-for="email"></small>
+            </div>
+
+            <div class="contact-field">
+              <label for="contactTopic">I need help with</label>
+              <select id="contactTopic" name="topic" required>
+                <option value="">Choose one</option>
+                <option value="order">An order</option>
+                <option value="gift">A gift</option>
+                <option value="fit">Age &amp; fit</option>
+                <option value="other">Something else</option>
+              </select>
+              <small class="contact-error" data-error-for="topic"></small>
+            </div>
+
+            <div class="contact-field contact-field-full">
+              <label for="contactMessage">Your message</label>
+              <textarea id="contactMessage" name="message" rows="4" placeholder="Tell us a little about what you need..." required></textarea>
+              <small class="contact-error" data-error-for="message"></small>
+            </div>
+
+            <button class="contact-submit" type="submit">
+              <span>START THE CONVERSATION</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+</div>
+  </section>
+
+  <!-- CONTACT 02: THE NEXT ANSWER -->
+  <section class="contact-next-answer" id="contact-next-answer" aria-labelledby="nextAnswerTitle">
+    <div class="next-answer-shell">
+      <div class="next-answer-top" data-next-reveal>
+        <div class="next-answer-kicker">
+          <span>STACKLY / WHEN YOU NEED US</span><i></i><b>THE NEXT ANSWER</b>
+        </div>
+        <span class="next-answer-index">02 / 06</span>
+      </div>
+
+      <div class="next-answer-layout">
+        <div class="next-answer-copy" data-next-copy>
+          <span class="next-answer-eyebrow">NO LONG EXPLANATION.</span>
+          <h2 id="nextAnswerTitle">A clear answer<br>should feel<br><em>close.</em></h2>
+          <p>Choose the easiest way to reach us. Tell us the small detail that matters and we'll help you find the next useful step.</p>
+
+          <div class="next-answer-rule">
+            <span>REAL PEOPLE / SIMPLE REPLIES</span>
+            <i></i>
+            <strong>01 — 03</strong>
+          </div>
+        </div>
+
+        <div class="next-answer-orbit" data-next-orbit aria-hidden="true">
+          <div class="orbit-ring orbit-ring-one"></div>
+          <div class="orbit-ring orbit-ring-two"></div>
+          <div class="orbit-core">
+            <span>HERE</span>
+            <strong>WHEN<br>YOU NEED<br>US.</strong>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <span class="orbit-dot orbit-dot-one"></span>
+          <span class="orbit-dot orbit-dot-two"></span>
+          <span class="orbit-dot orbit-dot-three"></span>
+        </div>
+
+        <div class="next-answer-routes" data-next-routes>
+          <a class="answer-route" href="tel:+919876543210">
+            <span class="route-number">01</span>
+            <div class="route-copy">
+              <small>QUICK QUESTION</small>
+              <strong>Give us a call.</strong>
+              <span>Talk it through when typing feels like too much.</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+
+          <a class="answer-route" href="mailto:hello@stacklykids.com">
+            <span class="route-number">02</span>
+            <div class="route-copy">
+              <small>MORE TO SHARE</small>
+              <strong>Send an email.</strong>
+              <span>Give us the details and we'll take a closer look.</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+
+          <a class="answer-route" href="#contact-intro">
+            <span class="route-number">03</span>
+            <div class="route-copy">
+              <small>READY TO ASK</small>
+              <strong>Use the form above.</strong>
+              <span>Leave a message and start from exactly where you are.</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="next-answer-foot" data-next-reveal>
+        <span>NO NEED TO KNOW THE RIGHT WORDS.</span>
+        <div></div>
+        <strong>JUST TELL US WHAT'S HAPPENING.</strong>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT 03: ORDER JOURNEY -->
+  <section class="contact-order-journey" id="contact-order-journey" aria-labelledby="orderJourneyTitle">
+    <div class="order-journey-shell">
+      <div class="order-journey-top" data-order-reveal>
+        <div class="order-journey-kicker">
+          <span>STACKLY / AFTER YOU ORDER</span><i></i><b>KEEP IT MOVING</b>
+        </div>
+        <span class="order-journey-index">03 / 06</span>
+      </div>
+
+      <div class="order-journey-heading" data-order-heading>
+        <div>
+          <span class="order-eyebrow">FROM CLICK TO FRONT DOOR.</span>
+          <h2 id="orderJourneyTitle">Know where<br>things <em>stand.</em></h2>
+        </div>
+        <p>Need an update? Start with the moment you're in. A quick look is often all it takes to know what happens next.</p>
+      </div>
+
+      <div class="order-track" data-order-track>
+        <div class="order-track-line" aria-hidden="true">
+          <span class="order-track-progress"></span>
+        </div>
+
+        <article class="order-step is-active">
+          <div class="order-step-marker"><span>01</span><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></div>
+          <div class="order-step-card">
+            <small>ORDER PLACED</small>
+            <h3>We have it.</h3>
+            <p>Your little essentials are safely on their way into the process.</p>
+            <span class="order-step-tag">FIRST CHECK</span>
+          </div>
+        </article>
+
+        <article class="order-step">
+          <div class="order-step-marker"><span>02</span><i class="fa-solid fa-box-open" aria-hidden="true"></i></div>
+          <div class="order-step-card">
+            <small>BEING PREPARED</small>
+            <h3>Getting ready.</h3>
+            <p>Items are picked, checked and packed with the details in mind.</p>
+            <span class="order-step-tag">PACKING</span>
+          </div>
+        </article>
+
+        <article class="order-step">
+          <div class="order-step-marker"><span>03</span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
+          <div class="order-step-card">
+            <small>ON THE WAY</small>
+            <h3>Almost there.</h3>
+            <p>Your parcel has left us and is moving toward your doorstep.</p>
+            <span class="order-step-tag">DELIVERY</span>
+          </div>
+        </article>
+
+        <article class="order-step">
+          <div class="order-step-marker"><span>04</span><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+          <div class="order-step-card">
+            <small>ARRIVED</small>
+            <h3>Made it home.</h3>
+            <p>Everything is where it belongs. If it isn't, we're still here.</p>
+            <span class="order-step-tag">AFTERCARE</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="order-journey-foot" data-order-reveal>
+        <span>ORDER / DELIVERY / AFTERCARE</span>
+        <div></div>
+        <strong>IF SOMETHING FEELS UNCLEAR, ASK.</strong>
+      </div>
+    </div>
+  </section>
+
+
+<section class="contact-small-things" id="contact-small-things" aria-labelledby="smallThingsTitle">
+<div class="small-things-orb orb-one"></div><div class="small-things-orb orb-two"></div><div class="small-things-shell">
+<div class="small-things-top" data-aos="fade-down" data-aos-duration="700"><div><span>STACKLY / THE LITTLE DETAILS</span><i></i><b>MADE TO HELP</b></div><span>04 / 06</span></div>
+<div class="small-things-intro" data-aos="fade-up" data-aos-duration="850"><div><span>GOOD SUPPORT LIVES IN THE DETAILS.</span><h2 id="smallThingsTitle"><span>Small things.</span><br><em>Big relief.</em></h2></div><p>Sometimes the useful answer is a tiny detail that makes the next part of the day easier.</p></div>
+<div class="small-things-grid">
+<article class="small-detail-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="80"><span class="small-card-number">01</span><div class="small-card-icon"><i class="fa-solid fa-ruler-combined"></i></div><div><small>FIT &amp; DETAILS</small><h3>Not sure about the little things?</h3><p>Ask about size, fit, materials or the details that make a choice feel right.</p></div><span class="small-card-arrow">↗</span></article>
+<article class="small-detail-card accent" data-aos="fade-up" data-aos-duration="800" data-aos-delay="180"><span class="small-card-number">02</span><div class="small-card-icon"><i class="fa-solid fa-gift"></i></div><div><small>GIFTING</small><h3>Make the moment feel personal.</h3><p>Need help choosing something thoughtful? Start with the person, not the product.</p></div><span class="small-card-arrow">↗</span></article>
+<article class="small-detail-card wide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="280"><span class="small-card-number">03</span><div><small>AFTER THE ORDER</small><h3>Still need us after checkout?</h3><p>Questions don't stop when the parcel leaves. Reach out whenever something needs clearing up.</p></div><div class="small-stamp"><span>HERE</span><strong>WHEN<br>IT<br>MATTERS</strong><i class="fa-solid fa-heart"></i></div></article>
+</div>
+<div class="small-things-bottom" data-aos="fade-up" data-aos-duration="650" data-aos-delay="360"><span>USEFUL / RELEVANT / HUMAN</span><i></i><strong>NO QUESTION IS TOO SMALL.</strong></div>
+</div>
+</section>
+
+
+<!-- CONTACT SECTION 05 — QUICK ANSWERS -->
+<section class="contact-quick-answers" id="contact-quick-answers" aria-labelledby="quickAnswersTitle">
+  <div class="quick-answers-shell">
+
+    <div class="quick-answers-top" data-aos="fade-down" data-aos-duration="700">
+      <div class="quick-answers-kicker">
+        <span>STACKLY / QUICK ANSWERS</span><i></i><b>KEEP IT SIMPLE</b>
+      </div>
+      <span>05 / 06</span>
+    </div>
+
+    <div class="quick-answers-head" data-aos="fade-up" data-aos-duration="850">
+      <div>
+        <span class="quick-answers-eyebrow">A FEW THINGS PEOPLE ASK.</span>
+        <h2 id="quickAnswersTitle">Good to<br><em>know.</em></h2>
+      </div>
+      <p>Short answers for the small questions that can otherwise slow everything down.</p>
+    </div>
+
+    <div class="quick-answers-layout">
+      <div class="quick-answers-index" data-aos="fade-right" data-aos-duration="750">
+        <span class="quick-index-label">START HERE</span>
+        <div class="quick-index-number">01</div>
+        <strong>Find the useful answer.</strong>
+        <p>Tap a question to reveal the detail without leaving the page.</p>
+        <div class="quick-index-rule"></div>
+        <span>ASK / CHECK / MOVE ON</span>
+      </div>
+
+      <div class="quick-answers-list" data-aos="fade-left" data-aos-duration="850">
+        <details class="quick-answer" open>
+          <summary>
+            <span class="quick-answer-no">01</span>
+            <span class="quick-answer-title">Can I ask before I order?</span>
+            <span class="quick-answer-mark">+</span>
+          </summary>
+          <div class="quick-answer-body">
+            <p>Of course. If you are unsure about size, fit, age suitability or a gift, reach out before making the choice.</p>
+          </div>
+        </details>
+
+        <details class="quick-answer">
+          <summary>
+            <span class="quick-answer-no">02</span>
+            <span class="quick-answer-title">Need help choosing a gift?</span>
+            <span class="quick-answer-mark">+</span>
+          </summary>
+          <div class="quick-answer-body">
+            <p>Tell us who it is for, the occasion and the little things they enjoy. We can help narrow it down.</p>
+          </div>
+        </details>
+
+        <details class="quick-answer">
+          <summary>
+            <span class="quick-answer-no">03</span>
+            <span class="quick-answer-title">What if I still need help after checkout?</span>
+            <span class="quick-answer-mark">+</span>
+          </summary>
+          <div class="quick-answer-body">
+            <p>That is still a good time to contact us. Share the order detail and the question, and we will help with the next step.</p>
+          </div>
+        </details>
+
+        <details class="quick-answer">
+          <summary>
+            <span class="quick-answer-no">04</span>
+            <span class="quick-answer-title">Have a question that is not here?</span>
+            <span class="quick-answer-mark">+</span>
+          </summary>
+          <div class="quick-answer-body">
+            <p>Send it anyway. The quickest useful answer is often the one that starts with the question you actually have.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="quick-answers-bottom" data-aos="fade-up" data-aos-duration="650">
+      <span>NO NEED TO OVERTHINK IT.</span>
+      <div></div>
+      <strong>ASK THE SMALL QUESTION.</strong>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Preserve the browser's native scroll position on reload/back-forward.
+  // Do not force the page to the top.
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "auto";
+  }
+
+  function initAOS() {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      duration: 850,
+      easing: "ease-out-cubic",
+      offset: 80,
+      anchorPlacement: "top-bottom",
+      disable: false
+    });
+
+    // Recalculate trigger positions without changing scroll position.
+    requestAnimationFrame(function () {
+      AOS.refreshHard();
+    });
+
+    setTimeout(function () {
+      AOS.refreshHard();
+    }, 150);
+  }
+
+  if (document.readyState === "complete") {
+    initAOS();
+  } else {
+    window.addEventListener("load", initAOS, { once: true });
+  }
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+<script>
+(function () {
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  function goTop(){ window.scrollTo(0,0); document.documentElement.scrollTop=0; document.body.scrollTop=0; }
+  window.addEventListener("load",function(){
+    goTop();
+    if(window.AOS){
+      AOS.init({once:true,duration:850,easing:"ease-out-cubic",offset:80,anchorPlacement:"top-bottom",disable:false});
+      requestAnimationFrame(function(){ AOS.refreshHard(); });
+      setTimeout(function(){ goTop(); AOS.refreshHard(); },150);
+    }
+  });
+})();
+</script></body>
+</html>
