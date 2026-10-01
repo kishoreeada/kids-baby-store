@@ -75,10 +75,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       return;
     }
 
-    if(status){
-      status.textContent="Thanks — your message is ready to be sent.";
-    }
-    form.reset();
+    window.location.href="404.html";
   });
 });
 
@@ -316,4 +313,3 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 document.addEventListener("DOMContentLoaded",()=>{const s=document.querySelector(".contact-small-things");if(!s||!window.gsap||!window.ScrollTrigger)return;if(!matchMedia("(prefers-reduced-motion: reduce)").matches){const a=s.querySelectorAll(".small-detail-card");gsap.set(s.querySelector(".small-things-top"),{y:14,opacity:0});gsap.set(s.querySelector(".small-things-intro"),{y:25,opacity:0});gsap.set(a,{y:35,opacity:0});ScrollTrigger.create({trigger:s,start:"top 72%",once:true,onEnter:()=>{gsap.to(s.querySelector(".small-things-top"),{y:0,opacity:1,duration:.35});gsap.to(s.querySelector(".small-things-intro"),{y:0,opacity:1,duration:.55,delay:.08});gsap.to(a,{y:0,opacity:1,duration:.5,stagger:.12,delay:.15,ease:"power3.out"})}});if(matchMedia("(pointer:fine)").matches){s.addEventListener("pointermove",e=>{const r=s.getBoundingClientRect(),x=e.clientX/r.width-r.left/r.width-.5,y=e.clientY/r.height-r.top/r.height-.5;a.forEach((el,i)=>el.style.transform=`translate(${x*(i+1)*3}px,${y*(i+1)*2}px)`)});s.addEventListener("pointerleave",()=>a.forEach(el=>el.style.transform=""))}}});
-

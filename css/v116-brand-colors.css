@@ -67,3 +67,9 @@ body.blog-page .text-decoration-yellow{
     background:var(--stackly-theme-pink) !important;
   }
 }
+
+/* Readable-content floor: body copy and form content remain legible at every
+   breakpoint while compact visual markers keep their intentional hierarchy. */
+body :is(p, li, label, input, select, textarea, .footer-column a, .contact-error, .footer-form-error){
+  font-size:max(15px,1em) !important;
+}

@@ -65,6 +65,15 @@ document.querySelectorAll(".cta-404").forEach((cta)=>{
   });
 });
 
+// Header wish-list and bag controls are display-only until their respective
+// experiences are built. Keep their destination consistent with other
+// unfinished commerce actions.
+document.querySelectorAll('.icon-btn[aria-label="Wishlist"], .icon-btn[aria-label="Shopping bag"]').forEach((control)=>{
+  control.addEventListener("click",()=>{
+    window.location.href="404.html";
+  });
+});
+
 if(window.gsap){
   document.querySelectorAll(".journey-card").forEach((card,index)=>{
     card.style.opacity="0"; card.style.transform="translateY(40px)";
